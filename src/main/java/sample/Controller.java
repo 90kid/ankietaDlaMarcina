@@ -33,6 +33,11 @@ public class Controller {
     public void initialize(){
         setImagesToRadioButtons();
     }
+
+    public void handelAcceptationButton(){
+
+    }
+
     private void setImagesToRadioButtons(){
         setAllHappyRadioButtons();
         setAllMidRadioButtons();
