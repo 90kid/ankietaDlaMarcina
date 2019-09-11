@@ -28,9 +28,9 @@ public class Controller {
     @FXML
     private RadioButton sadQ3;
 
-    private Question question1;
-    private Question question2;
-    private Question question3;
+    private static Question question1;
+    private static Question question2;
+    private static Question question3;
 
 
     @FXML
@@ -113,4 +113,14 @@ public class Controller {
             question.incrementSad();
         }
     }
+    public static Question getQuestion1(){
+        return question1;
+    }
+    public static Question getQuestion2(){
+        return question2;
+    }
+    public static Question getQuestion3(){
+        return question3;
+    }
+
 }
