@@ -1,7 +1,9 @@
-package sample;
+package controllers;
 
+import controllers.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import sample.Question;
 
 
 public class StatBoxController {

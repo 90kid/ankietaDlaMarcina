@@ -1,4 +1,4 @@
-package sample;
+package controllers.display;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,8 +8,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-class StatBox {
-    static void display(){
+public class StatBox {
+    public static void display(){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(StatBox.class.getResource("/StatBox.fxml"));
             Parent root1 = fxmlLoader.load();

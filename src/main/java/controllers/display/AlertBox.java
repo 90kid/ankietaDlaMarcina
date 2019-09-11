@@ -1,4 +1,4 @@
-package sample;
+package controllers.display;
 
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +11,8 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 
-class AlertBox {
-    static void display(){
+public class AlertBox {
+    public static void display(){
 
         try {
             PauseTransition delay = new PauseTransition(Duration.seconds(1));

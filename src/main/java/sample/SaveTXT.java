@@ -1,5 +1,7 @@
 package sample;
 
+import controllers.Controller;
+
 import java.io.FileWriter;
 import java.io.IOException;
 
