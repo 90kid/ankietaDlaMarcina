@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
@@ -16,6 +17,8 @@ public class Main extends Application {
         scene.getStylesheets().add(style);
         primaryStage.setScene(scene);
         primaryStage.setMaximized(true);
+        primaryStage.initStyle(StageStyle.UTILITY);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
