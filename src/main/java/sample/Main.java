@@ -1,6 +1,6 @@
 package sample;
 
-import controllers.display.StatBox;
+import view.display.StatBox;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

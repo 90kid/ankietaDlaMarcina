@@ -1,4 +1,4 @@
-package controllers.display;
+package view.display;
 
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package controllers.display;
+package view.display;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

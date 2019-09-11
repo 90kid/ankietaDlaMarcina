@@ -1,6 +1,6 @@
 package sample;
 
-import controllers.Controller;
+import view.controllers.Controller;
 
 import java.io.FileWriter;
 import java.io.IOException;
