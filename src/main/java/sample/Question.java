@@ -35,4 +35,7 @@ public class Question {
     public int getSadCounter() {
         return sadCounter;
     }
+    public String getContent(){
+        return content;
+    }
 }
