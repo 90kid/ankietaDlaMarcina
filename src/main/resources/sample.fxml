@@ -28,15 +28,15 @@
             <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: white;">
                <children>
                   <Separator opacity="0.0" prefHeight="0.0" prefWidth="600.0" />
-                  <RadioButton fx:id="happyQ1" mnemonicParsing="false">
+                  <RadioButton fx:id="happyQ1" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion1">
                      <toggleGroup>
                         <ToggleGroup fx:id="Question1" />
                      </toggleGroup>
                   </RadioButton>
                   <Separator opacity="0.0" prefHeight="0.0" prefWidth="124.0" />
-                  <RadioButton fx:id="midQ1" mnemonicParsing="false" toggleGroup="$Question1" />
+                  <RadioButton fx:id="midQ1" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion1" toggleGroup="$Question1" />
                   <Separator opacity="0.0" prefHeight="7.0" prefWidth="152.0" />
-                  <RadioButton fx:id="sadQ1" mnemonicParsing="false" toggleGroup="$Question1" />
+                  <RadioButton fx:id="sadQ1" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion1" toggleGroup="$Question1" />
                </children>
             </HBox>
             <Label alignment="CENTER" prefHeight="42.0" prefWidth="1920.0" text="Jak oceniasz prelekcję?" textFill="#2dab6a">
@@ -48,15 +48,15 @@
             <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: white;">
                <children>
                   <Separator opacity="0.0" prefHeight="9.0" prefWidth="600.0" />
-                  <RadioButton fx:id="happyQ2" mnemonicParsing="false">
+                  <RadioButton fx:id="happyQ2" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion2">
                      <toggleGroup>
                         <ToggleGroup fx:id="Question2" />
                      </toggleGroup>
                   </RadioButton>
                   <Separator opacity="0.0" prefHeight="0.0" prefWidth="124.0" />
-                  <RadioButton fx:id="midQ2" mnemonicParsing="false" toggleGroup="$Question2" />
+                  <RadioButton fx:id="midQ2" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion2" toggleGroup="$Question2" />
                   <Separator opacity="0.0" prefHeight="7.0" prefWidth="152.0" />
-                  <RadioButton fx:id="sadQ2" mnemonicParsing="false" toggleGroup="$Question2" />
+                  <RadioButton fx:id="sadQ2" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion2" toggleGroup="$Question2" />
                </children>
             </HBox>
             <Label alignment="CENTER" prefWidth="1920.0" text="Jak oceniasz organizację konferencji?" textFill="#2dab6a">
@@ -68,15 +68,15 @@
             <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: white;">
                <children>
                   <Separator opacity="0.0" prefHeight="3.0" prefWidth="600.0" />
-                  <RadioButton fx:id="happyQ3" mnemonicParsing="false">
+                  <RadioButton fx:id="happyQ3" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion3">
                      <toggleGroup>
                         <ToggleGroup fx:id="Question21" />
                      </toggleGroup>
                   </RadioButton>
                   <Separator opacity="0.0" prefHeight="0.0" prefWidth="124.0" />
-                  <RadioButton fx:id="midQ3" mnemonicParsing="false" toggleGroup="$Question21" />
+                  <RadioButton fx:id="midQ3" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion3" toggleGroup="$Question21" />
                   <Separator opacity="0.0" prefHeight="7.0" prefWidth="152.0" />
-                  <RadioButton fx:id="sadQ3" mnemonicParsing="false" toggleGroup="$Question21" />
+                  <RadioButton fx:id="sadQ3" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion3" toggleGroup="$Question21" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-background-color: white;">

@@ -1,7 +1,6 @@
 package view.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -34,24 +33,44 @@ public class Controller {
 
 
     @FXML
-    public void initialize(){
+    public void initialize() {
         setImagesToRadioButtons();
         question1 = new Question("Jak oceniasz grę szkoleniową?");
         question2 = new Question("Jak oceniasz prelekcję?");
         question3 = new Question("Jak oceniasz organizację konferencji?");
     }
 
-    public void handelAcceptationButton(){
+    public void handelAcceptationButton() {
         addPoints();
+        resetRadioButtons();
         AlertBox.display();
     }
 
-    private void setImagesToRadioButtons(){
+    private void resetRadioButtons(){
+        unsetAllRadioButtons();
+        handleSelectionButtonQuestion1();
+        handleSelectionButtonQuestion2();
+        handleSelectionButtonQuestion3();
+    }
+    private void unsetAllRadioButtons(){
+        happyQ1.setSelected(false);
+        happyQ2.setSelected(false);
+        happyQ3.setSelected(false);
+        midQ1.setSelected(false);
+        midQ2.setSelected(false);
+        midQ3.setSelected(false);
+        sadQ1.setSelected(false);
+        sadQ2.setSelected(false);
+        sadQ3.setSelected(false);
+    }
+
+    private void setImagesToRadioButtons() {
         setAllHappyRadioButtons();
         setAllMidRadioButtons();
         setAllSadRadioButtons();
     }
-    private void setAllHappyRadioButtons(){
+
+    private void setAllHappyRadioButtons() {
         Image imageHappy = new Image(getClass().getResourceAsStream("/happy.png"));
         happyQ1.getStyleClass().remove("radio-button");
         happyQ1.getStyleClass().add("toggle-button");
@@ -66,7 +85,8 @@ public class Controller {
         happyQ3.setStyle("-fx-background-color: transparent;");
         happyQ3.setGraphic(new ImageView(imageHappy));
     }
-    private void setAllMidRadioButtons(){
+
+    private void setAllMidRadioButtons() {
         Image imageMid = new Image(getClass().getResourceAsStream("/mid.png"));
         midQ1.getStyleClass().remove("radio-button");
         midQ1.getStyleClass().add("toggle-button");
@@ -81,7 +101,8 @@ public class Controller {
         midQ3.setStyle("-fx-background-color: transparent;");
         midQ3.setGraphic(new ImageView(imageMid));
     }
-    private void setAllSadRadioButtons(){
+
+    private void setAllSadRadioButtons() {
         Image imageSad = new Image(getClass().getResourceAsStream("/sad.png"));
         sadQ1.getStyleClass().remove("radio-button");
         sadQ1.getStyleClass().add("toggle-button");
@@ -96,30 +117,62 @@ public class Controller {
         sadQ3.setStyle("-fx-background-color: transparent;");
         sadQ3.setGraphic(new ImageView(imageSad));
     }
-    private void addPoints(){
+
+    private void addPoints() {
         questionSelect(happyQ1, midQ1, sadQ1, question1);
         questionSelect(happyQ2, midQ2, sadQ2, question2);
         questionSelect(happyQ3, midQ3, sadQ3, question3);
     }
 
-    private void questionSelect(RadioButton happyButton, RadioButton midButton,RadioButton sadButton,Question question){
-        if(happyButton.isSelected()){
+    private void questionSelect(RadioButton happyButton, RadioButton midButton, RadioButton sadButton, Question question) {
+        if (happyButton.isSelected()) {
             question.incrementHappy();
-        }
-        else if (midButton.isSelected()){
+        } else if (midButton.isSelected()) {
             question.incrementMid();
-        }
-        else if (sadButton.isSelected()){
+        } else if (sadButton.isSelected()) {
             question.incrementSad();
         }
     }
-    public static Question getQuestion1(){
+
+    private void questionSelectImage(RadioButton happyButton, RadioButton midButton, RadioButton sadButton) {
+        if (happyButton.isSelected()) {
+            happyButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/fullhappy.png"))));
+        } else {
+            happyButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/happy.png"))));
+        }
+        if (midButton.isSelected()) {
+            midButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/fullmid.png"))));
+        } else {
+            midButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/mid.png"))));
+        }
+        if (sadButton.isSelected()) {
+            sadButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/fullsad.png"))));
+        } else {
+            sadButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/sad.png"))));
+        }
+    }
+
+    public void handleSelectionButtonQuestion1() {
+        questionSelectImage(happyQ1, midQ1, sadQ1);
+    }
+
+    public void handleSelectionButtonQuestion2() {
+        questionSelectImage(happyQ2, midQ2, sadQ2);
+    }
+
+    public void handleSelectionButtonQuestion3() {
+        questionSelectImage(happyQ3, midQ3, sadQ3);
+    }
+
+    public static Question getQuestion1() {
         return question1;
     }
-    public static Question getQuestion2(){
+
+    public static Question getQuestion2() {
         return question2;
     }
-    public static Question getQuestion3(){
+
+    public static Question getQuestion3() {
         return question3;
     }
 
