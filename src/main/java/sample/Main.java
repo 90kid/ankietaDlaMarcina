@@ -11,7 +11,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
-        primaryStage.setScene(new Scene(root, 300, 275));
+        String  style= getClass().getResource("/buttonstyle.css").toExternalForm();
+        Scene scene = new Scene(root, 300, 275);
+        scene.getStylesheets().add(style);
+        primaryStage.setScene(scene);
         primaryStage.setMaximized(true);
         primaryStage.show();
     }
