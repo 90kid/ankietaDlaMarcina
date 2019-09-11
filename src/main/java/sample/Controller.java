@@ -28,14 +28,22 @@ public class Controller {
     @FXML
     private RadioButton sadQ3;
 
+    private Question question1;
+    private Question question2;
+    private Question question3;
+
 
     @FXML
     public void initialize(){
         setImagesToRadioButtons();
+        question1 = new Question("Jak oceniasz grę szkoleniową?");
+        question2 = new Question("Jak oceniasz prelekcję?");
+        question3 = new Question("Jak oceniasz organizację konferencji?");
     }
 
     public void handelAcceptationButton(){
-
+        addPoints();
+        AlertBox.display();
     }
 
     private void setImagesToRadioButtons(){
@@ -87,5 +95,22 @@ public class Controller {
         sadQ3.getStyleClass().add("toggle-button");
         sadQ3.setStyle("-fx-background-color: transparent;");
         sadQ3.setGraphic(new ImageView(imageSad));
+    }
+    private void addPoints(){
+        questionSelect(happyQ1, midQ1, sadQ1, question1);
+        questionSelect(happyQ2, midQ2, sadQ2, question2);
+        questionSelect(happyQ3, midQ3, sadQ3, question3);
+    }
+
+    private void questionSelect(RadioButton happyButton, RadioButton midButton,RadioButton sadButton,Question question){
+        if(happyButton.isSelected()){
+            question.incrementHappy();
+        }
+        else if (midButton.isSelected()){
+            question.incrementMid();
+        }
+        else if (sadButton.isSelected()){
+            question.incrementSad();
+        }
     }
 }
