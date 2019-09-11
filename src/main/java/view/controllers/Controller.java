@@ -10,8 +10,6 @@ import sample.Question;
 
 public class Controller {
     @FXML
-    private Button acceptationButton;
-    @FXML
     private RadioButton happyQ1;
     @FXML
     private RadioButton midQ1;
