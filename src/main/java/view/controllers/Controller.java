@@ -136,17 +136,17 @@ public class Controller {
 
     private void questionSelectImage(RadioButton happyButton, RadioButton midButton, RadioButton sadButton) {
         if (happyButton.isSelected()) {
-            happyButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/fullhappy.png"))));
+            happyButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/chosenhappy.png"))));
         } else {
             happyButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/happy.png"))));
         }
         if (midButton.isSelected()) {
-            midButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/fullmid.png"))));
+            midButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/chosenmid.png"))));
         } else {
             midButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/mid.png"))));
         }
         if (sadButton.isSelected()) {
-            sadButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/fullsad.png"))));
+            sadButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/chosensad.png"))));
         } else {
             sadButton.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/sad.png"))));
         }
