@@ -28,6 +28,7 @@ public class Main extends Application {
         primaryStage.setMaximized(true);
         primaryStage.initStyle(StageStyle.UTILITY);
         primaryStage.setResizable(false);
+        primaryStage.setOnCloseRequest(e -> saveFile());
         primaryStage.show();
     }
 
@@ -39,7 +40,6 @@ public class Main extends Application {
     private String takeCurrentData(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH-mm-ss");
         LocalDateTime now = LocalDateTime.now();
-        System.out.println(dtf.format(now));
         return dtf.format(now);
     }
 
