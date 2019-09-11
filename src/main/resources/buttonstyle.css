@@ -1,9 +1,6 @@
 .button {
-  -fx-background-color: white;  /* Green */
-  -fx-border-width: 2px;
-  -fx-border-style: solid;
-  -fx-border-color: #2dab6a;
-  -fx-color: white;
+  -fx-background-color: #2dab6a;  /* Green */
+  -fx-color: black;
   -fx-padding: 16px 32px;
   -fx-text-align: center;
   -fx-text-decoration: none;
@@ -12,10 +9,6 @@
   -fx-margin: 4px 2px;
   -fx-transition-duration: 0.8s;
   -fx-cursor: pointer;
-}
-.button:hover{
- -fx-background-color: #2dab6a;
- -fx-color: black;
 }
 .pane {
     -fx-background-color: white;

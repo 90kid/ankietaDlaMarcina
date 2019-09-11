@@ -79,6 +79,7 @@
                   <RadioButton fx:id="sadQ3" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion3" toggleGroup="$Question21" />
                </children>
             </HBox>
+            <Separator opacity="0.0" orientation="VERTICAL" prefHeight="59.0" prefWidth="4.0" />
             <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-background-color: white;">
                <children>
                   <Separator opacity="0.0" prefHeight="33.0" prefWidth="878.0" />
