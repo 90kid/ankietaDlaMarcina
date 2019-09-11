@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane cache="true" cacheHint="SCALE" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AlertBoxController">
+    <children>
+        <Label fx:id="text" alignment="CENTER" contentDisplay="CENTER" layoutX="517.0" layoutY="352.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="377.0" prefWidth="887.0" text="Label" textAlignment="CENTER" textFill="#2dab6a">
+            <font>
+                <Font size="96.0" />
+            </font>
+        </Label>
+    </children>
+    <effect>
+        <Blend />
+    </effect>
 </AnchorPane>
