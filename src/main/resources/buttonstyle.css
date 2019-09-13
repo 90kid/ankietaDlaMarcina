@@ -6,6 +6,7 @@
   -fx-text-decoration: none;
   -fx-display: inline-block;
   -fx-font-size: 16px;
+  -fx-font-weight: bold;
   -fx-margin: 4px 2px;
   -fx-transition-duration: 0.8s;
   -fx-cursor: pointer;
