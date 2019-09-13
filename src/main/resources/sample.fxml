@@ -83,7 +83,7 @@
             <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-background-color: white;">
                <children>
                   <Separator opacity="0.0" prefHeight="33.0" prefWidth="878.0" />
-                  <Button fx:id="acceptationButton" mnemonicParsing="false" onAction="#handelAcceptationButton" text="Zatwierdź" />
+                  <Button fx:id="acceptationButton" mnemonicParsing="false" onAction="#handelAcceptationButton" text="Zakończ" />
                </children>
             </HBox>
          </children>
