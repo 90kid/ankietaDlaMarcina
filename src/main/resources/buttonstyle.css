@@ -11,16 +11,3 @@
   -fx-transition-duration: 0.8s;
   -fx-cursor: pointer;
 }
-.pane {
-    -fx-background-color: white;
-}
-.vbox{
-    -fx-background-color: white;
-}
-.hbox {
-    -fx-background-color: white;
-    -fx-color: white;
-}
-.label {
-    -fx-background-color: white;
-}
