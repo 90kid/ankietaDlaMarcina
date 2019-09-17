@@ -10,22 +10,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.Controller">
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.Controller">
    <children>
-      <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;">
+      <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: transparent;">
          <children>
-            <Label alignment="CENTER" prefHeight="107.0" prefWidth="1920.0" text="Podziel się swoją opinią:" textFill="#2dab6a" textOverrun="CLIP">
+            <Label alignment="CENTER" prefHeight="107.0" prefWidth="1920.0" style="-fx-background-color: transparent;" text="Podziel się swoją opinią:" textFill="#2dab6a" textOverrun="CLIP">
                <font>
                   <Font name="System Bold" size="48.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" prefWidth="1920.0" text="Jak oceniasz grę szkoleniową?" textFill="#2dab6a">
+            <Label alignment="CENTER" prefWidth="1920.0" style="-fx-background-color: transparent;" text="Jak oceniasz grę szkoleniową?" textFill="#2dab6a">
                <font>
                   <Font name="Arial" size="36.0" />
                </font>
             </Label>
             <Separator opacity="0.0" orientation="VERTICAL" prefHeight="69.0" prefWidth="30.0" />
-            <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: white;">
+            <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: transparent;">
                <children>
                   <Separator opacity="0.0" prefHeight="0.0" prefWidth="600.0" />
                   <RadioButton fx:id="happyQ1" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion1">
@@ -45,7 +45,7 @@
                </font>
             </Label>
             <Separator opacity="0.0" orientation="VERTICAL" prefHeight="69.0" prefWidth="30.0" />
-            <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: white;">
+            <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: transparent;">
                <children>
                   <Separator opacity="0.0" prefHeight="9.0" prefWidth="600.0" />
                   <RadioButton fx:id="happyQ2" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion2">
@@ -65,7 +65,7 @@
                </font>
             </Label>
             <Separator opacity="0.0" orientation="VERTICAL" prefHeight="69.0" prefWidth="30.0" />
-            <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: white;">
+            <HBox prefHeight="154.0" prefWidth="1920.0" style="-fx-background-color: transparent;">
                <children>
                   <Separator opacity="0.0" prefHeight="3.0" prefWidth="600.0" />
                   <RadioButton fx:id="happyQ3" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion3">
@@ -80,7 +80,7 @@
                </children>
             </HBox>
             <Separator opacity="0.0" orientation="VERTICAL" prefHeight="59.0" prefWidth="4.0" />
-            <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-background-color: white;">
+            <HBox prefHeight="100.0" prefWidth="1920.0" style="-fx-background-color: transparent;">
                <children>
                   <Separator opacity="0.0" prefHeight="33.0" prefWidth="878.0" />
                   <Button fx:id="acceptationButton" mnemonicParsing="false" onAction="#handelAcceptationButton" text="Zakończ" />
