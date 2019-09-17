@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.*;
 import view.display.AlertBox;
 import sample.Question;
 
@@ -26,6 +27,8 @@ public class Controller {
     private RadioButton midQ3;
     @FXML
     private RadioButton sadQ3;
+    @FXML
+    private Pane pane;
 
     private static Question question1;
     private static Question question2;
@@ -34,10 +37,18 @@ public class Controller {
 
     @FXML
     public void initialize() {
+        setBackGround();
         setImagesToRadioButtons();
         question1 = new Question("Jak oceniasz grę szkoleniową?");
         question2 = new Question("Jak oceniasz prelekcję?");
         question3 = new Question("Jak oceniasz organizację konferencji?");
+    }
+
+    private void setBackGround(){
+        BackgroundImage myBI= new BackgroundImage(new Image(getClass().getResourceAsStream("/background.png")),
+                BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
+                BackgroundSize.DEFAULT);
+        pane.setBackground(new Background(myBI));
     }
 
     public void handelAcceptationButton() {
