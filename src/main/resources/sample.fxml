@@ -39,7 +39,7 @@
                   <RadioButton fx:id="sadQ1" mnemonicParsing="false" onAction="#handleSelectionButtonQuestion1" toggleGroup="$Question1" />
                </children>
             </HBox>
-            <Label alignment="CENTER" prefHeight="42.0" prefWidth="1920.0" text="Jak oceniasz prelekcję?" textFill="#2dab6a">
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="1920.0" text="Jak oceniasz prelekcje?" textFill="#2dab6a">
                <font>
                   <Font name="Arial" size="36.0" />
                </font>
